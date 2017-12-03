@@ -6,7 +6,6 @@ class AdvancedRecursiveDirectoryIterator
 
     private $topDir;
     private $structure = [];
-    private $level = 0;
 
     public function __construct($topDir)
     {
@@ -69,5 +68,3 @@ class AdvancedRecursiveDirectoryIterator
         return $this->structure;
     }
 }
-
-var_dump((new AdvancedRecursiveDirectoryIterator('/localhost/htdocs/python3'))->getStructure());
